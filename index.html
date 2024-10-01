@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Slider-swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- Slider-swiper END -->
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONTS END -->
+    <title>Aspire</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/global/favicon.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="img/global/favicon.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="img/global/favicon.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="img/global/favicon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="img/global/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="img/global/favicon.png" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_wrapper mycontainer">
+        <nav class="navbar">
+          <a href="/" class="logo_wrapper">
+            <img src="img/global/logo.png" alt="logo" class="main-logo logo-white" />
+            <img src="img/global/logo.png" alt="logo" class="main-logo logo-hide logo-color" />
+          </a>
+
+          <ul class="navbar_menu">
+            <li><a class="nav_elem" href="#about">About us</a></li>
+            <li><a class="nav_elem" href="#howtostart">How to start</a></li>
+            <li><a class="nav_elem" href="#benefits">Benefits</a></li>
+            <li><a class="nav_elem" href="#reviews">Reviews</a></li>
+          </ul>
+          <div class="header_button_pair">
+            <a href="#contacts" class="main_button" onclick="scrollToSub()">Get started</a>
+          </div>
+          <div class="burger">
+            <div class="burger_space" id="burger">
+              <span class="stick"></span>
+              <span class="stick"></span>
+              <span class="stick"></span>
+            </div>
+          </div>
+        </nav>
+        <div class="popup" id="popup">
+          <!-- <img src="img/main/mobbgmenu.png" alt="moblogo" class="mob_menu_bgimage" /> -->
+          <div class="popup_textblock" id="popupSlide">
+            <ul class="navbar_menu_mobile">
+              <li><a href="#about" class="nav_elem_mobile">About us</a></li>
+              <li>
+                <a href="#howtostart" class="nav_elem_mobile">How to start</a>
+              </li>
+              <li>
+                <a href="#benefits" class="nav_elem_mobile">Benefits</a>
+              </li>
+              <li>
+                <a href="#reviews" class="nav_elem_mobile">Reviews</a>
+              </li>
+            </ul>
+            <div class="header_button_pair mob_menu_buttons">
+              <a href="#contacts" class="main_button mob_button mob_menu_button">Get started </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="main">
+      <div class="main_wrapper">
+        <div class="deco-wrapper"></div>
+        <div class="gradient5"></div>
+        <div class="main_text_content">
+          <h1>Achieve Wellness with GLP-1:</h1>
+          <p class="main_subtitle">Semaglutide, Tirzepatide <br />& Retatrutide</p>
+          <p class="main_text">
+            Boost your health journey with powerful benefits for weight management and overall
+            wellness
+          </p>
+          <a href="#" class="main_button main_item_button">Get Started</a>
+        </div>
+        <div class="main_images_content">
+          <div class="bottle_price_wrapper">
+            <p class="bottle_text" id="numone">FROM</p>
+            <p class="bottle_price" id="numone">$299/mo</p>
+            <img src="img/main/sema.png" alt="semaglutide" class="bottle_img" />
+          </div>
+          <div class="bottle_price_wrapper">
+            <p class="bottle_text" id="numtwo">FROM</p>
+            <p class="bottle_price" id="numtwo">$399/mo</p>
+            <img src="img/main/terza.png" alt="terzapitide" class="bottle_img" />
+          </div>
+          <div class="bottle_price_wrapper">
+            <p class="bottle_text" id="numthree">FROM</p>
+            <p class="bottle_price" id="numthree">$599/mo</p>
+            <img src="img/main/reta.png" alt="retatrutide" class="bottle_img" />
+          </div>
+        </div>
+        <p class="main-text_mob">
+          Boost your health journey with powerful benefits for weight management and overall
+          wellness
+        </p>
+        <a href="" class="main_button button_on_mobile">Get Started</a>
+      </div>
+    </section>
+    <section class="benefits">
+      <div class="benefits_wrapper">
+        <div class="titles_wrapper">
+          <p class="section_title">Benefits of GLP-1 Treatments</p>
+          <p class="benefits_subtitle">
+            Aspire Meds offers weight loss programs featuring innovative GLP-1 treatments like
+            Semaglutide, Tirzepatide, and Retatrutide. Our holistic approach includes hormone
+            replacement therapy and personalized medical services, all designed to support your
+            weight management and overall well-being in a compassionate environment
+          </p>
+          <p class="benefits_subtitle mob_subt">
+            Aspire Meds offers weight loss programs with GLP-1 treatments like Semaglutide. We
+            provide hormone therapy and personalized care to support your health and well-being.
+          </p>
+        </div>
+        <div class="benefits_columns_wrapper">
+          <div class="benefits_item_wrapper">
+            <div class="benefits_item">
+              <p class="benefits_item_title">Positive Health Impact</p>
+              <p class="benefits_item_text">
+                They also improve overall health by lowering blood pressure, cholesterol,
+                triglycerides, and inflammation.
+              </p>
+              <img src="img/benefits/3.svg" alt="" class="benefits_item_image b_fst_img" />
+            </div>
+            <div class="benefits_item_wrapper">
+              <div class="benefits_item item_two">
+                <p class="benefits_item_title">Enhanced Blood Sugar Regulation</p>
+                <p class="benefits_item_text">
+                  Originally for type 2 diabetes, these drugs help regulate blood sugar by boosting
+                  insulin and reducing glucose production.
+                </p>
+                <img src="img/benefits/4.svg" alt="" class="benefits_item_image b_snd_img" />
+              </div>
+            </div>
+          </div>
+          <div class="benefits_item_wrapper">
+            <div class="benefits_item item_three">
+              <p class="benefits_item_title">
+                Improved<br />
+                Appetite Control
+              </p>
+              <p class="benefits_item_text text_three">
+                These medications mimic GLP-1, a hormone that reduces appetite and increases
+                fullness, helping to lower calorie intake.
+              </p>
+              <img src="img/benefits/1.svg" alt="" class="benefits_item_image b_trd_img" />
+            </div>
+          </div>
+          <div class="benefits_item_wrapper item_four_wrapper">
+            <img src="img/benefits/woman.png" alt="woman" class="benefits_woman" />
+            <div class="benefits_item item_four">
+              <p class="benefits_item_title">
+                Significant<br />
+                Weight Loss
+              </p>
+              <p class="benefits_item_text text_four">
+                Clinical trials show that Semaglutide, Tirzepatide, and Retatrutide can lead to
+                substantial weight loss, especially when paired with diet and exercise.
+              </p>
+              <img src="img/benefits/2.svg" alt="" class="benefits_item_image b_fth_img" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper mySwiper2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide b_slide">
+              <div class="benefits_item">
+                <p class="benefits_item_title">Positive Health Impact</p>
+                <p class="benefits_item_text">
+                  They also improve overall health by lowering blood pressure, cholesterol,
+                  triglycerides, and inflammation.
+                </p>
+                <img src="img/benefits/3.svg" alt="" class="benefits_item_image b_fst_img" />
+              </div>
+            </div>
+            <div class="swiper-slide b_slide">
+              <div class="benefits_item_wrapper">
+                <div class="benefits_item item_two">
+                  <p class="benefits_item_title">Enhanced Blood Sugar Regulation</p>
+                  <p class="benefits_item_text">
+                    Originally for type 2 diabetes, these drugs help regulate blood sugar by
+                    boosting insulin and reducing glucose production.
+                  </p>
+                  <img src="img/benefits/4.svg" alt="" class="benefits_item_image b_snd_img" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide b_slide">
+              <div class="benefits_item_wrapper">
+                <div class="benefits_item item_three">
+                  <p class="benefits_item_title">
+                    Improved<br />
+                    Appetite Control
+                  </p>
+                  <p class="benefits_item_text text_three">
+                    These medications mimic GLP-1, a hormone that reduces appetite and increases
+                    fullness, helping to lower calorie intake.
+                  </p>
+                  <img src="img/benefits/1.svg" alt="" class="benefits_item_image b_trd_img" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide b_slide">
+              <div class="benefits_item_wrapper item_four_wrapper">
+                <img src="img/benefits/woman.png" alt="woman" class="benefits_woman" />
+                <div class="benefits_item item_four">
+                  <p class="benefits_item_title">
+                    Significant<br />
+                    Weight Loss
+                  </p>
+                  <p class="benefits_item_text text_four">
+                    Clinical trials show that Semaglutide, Tirzepatide, and Retatrutide can lead to
+                    substantial weight loss, especially when paired with diet and exercise.
+                  </p>
+                  <img src="img/benefits/2.svg" alt="" class="benefits_item_image b_fth_img" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination2"></div>
+      </div>
+    </section>
+    <section class="comp">
+      <div class="comp_wrapper">
+        <div class="img_text_wrapper">
+          <img src="img/comp/graphdesk.png" alt="graph" class="comp_img comp_desk-img" />
+          <img src="img/comp/graphmob.png" alt="graph" class="comp_img comp_mob-img" />
+          <div class="comp_texts">
+            <p class="comp_title">Comparison of Average Annual Weight Loss by Peptide Therapy</p>
+            <p class="comp_text">
+              This chart shows the average annual weight loss percentages for three peptide
+              therapies: Semaglutide, Tirzepatide, and Retatrutide. Retatrutide, a third-generation
+              GLP-1 Triple Agonist, leads with a 26.9% body weight reduction, followed by
+              Tirzepatide at 22.4%, and Semaglutide at 16.9%.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="products">
+      <div class="products_wrapper">
+        <div class="products_product">
+          <p class="product_title">Semaglutide</p>
+          <div class="product_benefits_wrapper">
+            <div class="product_benefit_item">
+              <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
+              <p class="product_benefit_text">Annual weight loss: 16.9%</p>
+            </div>
+            <div class="product_benefit_item">
+              <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
+              <p class="product_benefit_text">Appetite Suppression</p>
+            </div>
+            <div class="product_benefit_item">
+              <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
+              <p class="product_benefit_text">Improves Glycemic Control</p>
+            </div>
+            <div class="product_benefit_item">
+              <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
+              <p class="product_benefit_text">Cardiovascular Protection</p>
+            </div>
+            <div class="product_benefit_item">
+              <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
+              <p class="product_benefit_text">+ B12 and Glycine</p>
+            </div>
+          </div>
+          <p class="product_vial">5ml Vial (2mg/ml) - 4 month supply</p>
+          <div class="abs_img_text_wrap">
+            <p class="abs_img_text_wrap_text">From $299/mo</p>
+            <img src="img/products/sema.png" alt="semaglutide" class="abs_img_text_wrap_img" />
+          </div>
+        </div>
+        <div class="products_product">
+          <p class="product_title">Tirzepatide</p>
+          <div class="product_benefits_wrapper">
+            <div class="product_benefit_item">
+              <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
+              <p class="product_benefit_text">Annual weight loss:  22.4%</p>
+            </div>
+            <div class="product_benefit_item">
+              <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
+              <p class="product_benefit_text">Superior Weight Loss</p>
+            </div>
+            <div class="product_benefit_item">
+              <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
+              <p class="product_benefit_text">Enhanced Blood Sugar Control</p>
+            </div>
+            <div class="product_benefit_item">
+              <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
+              <p class="product_benefit_text">Heart Health Benefits</p>
+            </div>
+            <div class="product_benefit_item">
+              <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
+              <p class="product_benefit_text">+ B12 and Glycine</p>
+            </div>
+          </div>
+          <p class="product_vial">5ml Vial (10mg/ml) - 4 month supply</p>
+          <div class="abs_img_text_wrap">
+            <p class="abs_img_text_wrap_text">From $399/mo</p>
+            <img src="img/products/tirze.png" alt="semaglutide" class="abs_img_text_wrap_img" />
+          </div>
+        </div>
+        <div class="products_product">
+          <p class="product_title">Retatrutide</p>
+          <div class="product_benefits_wrapper">
+            <div class="product_benefit_item">
+              <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
+              <p class="product_benefit_text">Annual weight loss: 26.9%</p>
+            </div>
+            <div class="product_benefit_item">
+              <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
+              <p class="product_benefit_text">Ultimate Weight Loss</p>
+            </div>
+            <div class="product_benefit_item">
+              <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
+              <p class="product_benefit_text">Blood Sugar Control</p>
+            </div>
+            <div class="product_benefit_item">
+              <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
+              <p class="product_benefit_text">Heart Health Support</p>
+            </div>
+            <div class="product_benefit_item">
+              <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
+              <p class="product_benefit_text">+ B12 and Glycine</p>
+            </div>
+          </div>
+          <p class="product_vial">4ml Vial (8mg/ml) - 2 Vials for 4 Months</p>
+          <div class="abs_img_text_wrap">
+            <p class="abs_img_text_wrap_text">From $599/mo</p>
+            <img src="img/products/reta.png" alt="semaglutide" class="abs_img_text_wrap_img" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="steps"></section>
+    <section class="changes"></section>
+    <section class="faq"></section>
+
+    <section class="reviews">
+      <div class="reviews_wrapper">
+        <h2 class="reviews_title">Reviews</h2>
+        <div class="reviews_items-wrapper">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="reviews_item">
+                  <img src="img/reviews/1.png" alt="jessica" class="reviews_item_img" />
+                  <p class="reviews_item_name">Jessica M.</p>
+                  <p class="reviews_item_age">age 35</p>
+                  <p class="reviews_item_text">
+                    "I started weight loss therapy at Aspire Meds three months ago, and I'm thrilled
+                    with the results! The combination of medical guidance, personalized diet plans,
+                    and the supportive environment has helped me lose 15 pounds safely. The staff is
+                    knowledgeable and genuinely cares about my progress."
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews_item">
+                  <img src="img/reviews/2.png" alt="jessica" class="reviews_item_img" />
+                  <p class="reviews_item_name">Tim C.</p>
+                  <p class="reviews_item_age">age 42</p>
+                  <p class="reviews_item_text">
+                    "The weight loss therapy at Aspire Meds helped me regain my confidence and
+                    significantly improved my health. The personalized attention and detailed
+                    follow-ups ensured that I was always on track. Plus, the serene setting made
+                    each visit a rejuvenating experience."
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews_item">
+                  <img src="img/reviews/3.png" alt="jessica" class="reviews_item_img" />
+                  <p class="reviews_item_name">Cessy F.</p>
+                  <p class="reviews_item_age">age 51</p>
+                  <p class="reviews_item_text">
+                    "After trying numerous diets and fitness programs, I turned to Aspire Meds's
+                    weight loss therapy. It's been a game-changer. The doctors provided a treatment
+                    plan that was easy to follow and incredibly effective. I've not only lost weight
+                    but maintained it, thanks to their ongoing support and advice."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <section class="cta"></section>
+    <footer></footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+        },
+
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 1,
+          },
+
+          // when window width is >= 480px
+          1100: {
+            slidesPerView: 2,
+          },
+          // when window width is >= 640px
+          1510: {
+            slidesPerView: 2,
+          },
+          1800: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper('.mySwiper2', {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        pagination: {
+          el: '.swiper-pagination2',
+          type: 'bullets',
+        },
+
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 1,
+          },
+
+          // when window width is >= 480px
+          1100: {
+            slidesPerView: 2,
+          },
+          // when window width is >= 640px
+          1510: {
+            slidesPerView: 2,
+          },
+          1800: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
