@@ -73,6 +73,7 @@
   align-items: center !important;
   justify-content: center !important;
 }
+
 @media (max-width: 1700px) {
   .changes {
     padding-left: 100px;

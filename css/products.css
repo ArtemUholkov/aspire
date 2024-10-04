@@ -42,6 +42,7 @@
   font-weight: 700;
   line-height: 120%;
   text-transform: uppercase;
+  margin-bottom: 12px;
 }
 .product_benefits_wrapper {
   display: flex;

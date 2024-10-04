@@ -87,7 +87,7 @@
 h1 {
   color: var(--Charcoal-gray, #111);
   font-family: 'Montserrat', sans-serif;
-  font-size: 64px;
+  font-size: 52px;
   font-weight: 700;
   line-height: 100%;
   text-transform: uppercase;
@@ -96,7 +96,7 @@ h1 {
 }
 .main_subtitle {
   font-family: 'Roboto', sans-serif;
-  font-size: 48px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 900;
   line-height: 100%;
@@ -108,16 +108,15 @@ h1 {
   margin-bottom: 24px;
 }
 .main_text {
-  max-width: 522px;
+  max-width: 645px;
   color: var(--dark-blue, #071867);
   font-family: 'Roboto', sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 300;
-  line-height: 140%;
-  margin-bottom: 64px;
+  line-height: 160%;
+  margin-bottom: 42px;
 }
 .main_button {
-  max-width: 193px;
   color: var(--Charcoal-gray, #111);
   font-family: 'Roboto', sans-serif;
   font-size: 20px;

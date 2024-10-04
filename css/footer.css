@@ -7,7 +7,7 @@ footer {
   background-color: #fefefe; /* Solid background inside the border */
   width: 100%;
   margin: 0 auto;
-  padding: 70px 60px 70px 175px;
+  padding: 70px 175px 70px 175px;
   z-index: 1;
   overflow: hidden;
   display: flex;
@@ -158,9 +158,10 @@ footer {
     padding-right: 20px;
   }
 }
-@media (max-width: 1145px) {
+@media (max-width: 1260px) {
   .footer_wrapper {
     padding-left: 60px;
+    padding-right: 60px;
     gap: 60px;
   }
 }

@@ -8,6 +8,8 @@
   border-radius: 30px; /* Adjust as needed */
   overflow: hidden; /* Ensures the content respects the border radius */
   padding: 60px 75px;
+  background-color: #fefefe;
+  z-index: -1;
 }
 
 .comp_wrapper::before {
@@ -99,6 +101,7 @@
     padding: 0;
     border: 0;
     border-radius: 0;
+    background: transparent;
   }
   .comp_wrapper::before {
     display: none;

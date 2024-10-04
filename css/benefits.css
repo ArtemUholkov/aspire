@@ -45,13 +45,15 @@
 }
 .benefits_item {
   position: relative;
-  border-radius: 10px; /* Adjust as needed */
+  border-radius: 30px; /* Adjust as needed */
   overflow: hidden; /* Ensures the content respects the border radius */
   width: 100%;
   padding-left: 43px;
   padding-top: 39px;
   height: 316px;
   width: 493px;
+  background-color: #fefefe;
+  z-index: -1; /* Add background color */
 }
 
 .benefits_item::before {
@@ -211,8 +213,8 @@
 .b_fth_img {
   width: 248.336px;
   height: 248.336px;
-  bottom: -30px;
-  right: -30px;
+  bottom: 0;
+  right: 0;
   transform: rotate(-7deg);
 }
 @media (min-width: 600px) {
