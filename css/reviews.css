@@ -2,7 +2,6 @@
   padding-left: 200px;
   padding-right: 200px;
   padding-top: 200px;
-  padding-bottom: 200px;
 }
 .reviews_wrapper {
   width: 100%;
@@ -16,7 +15,7 @@
   font-weight: 700;
   line-height: 100%;
   text-transform: uppercase;
-  margin-bottom: 120px;
+  margin-bottom: 44px;
 }
 
 .swiper-wrapper {
@@ -120,7 +119,6 @@
 @media (max-width: 1020px) {
   .reviews {
     padding-top: 100px;
-    padding-bottom: 100px;
   }
   .reviews_title {
     color: var(--Charcoal-gray, #111);

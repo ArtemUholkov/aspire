@@ -167,7 +167,7 @@ header {
     right: 100%;
     width: 100%;
     height: calc(100svh - 64px);
-    top: 64px;
+    top: 108px;
     z-index: 50;
     display: none;
     overflow: hidden;
@@ -180,7 +180,7 @@ header {
     position: fixed;
     left: 0;
     display: flex;
-    animation-duration: 0.5s;
+    animation-duration: 0.3s;
     animation-name: fadein;
     animation-timing-function: linear;
   }
@@ -260,7 +260,7 @@ header {
     position: relative;
     display: flex;
     left: 0;
-    animation-duration: 0.5s;
+    animation-duration: 0.3s;
     animation-name: slidein;
     animation-timing-function: linear;
   }
@@ -353,7 +353,10 @@ header {
     transition: all 2s;
   }
   header {
-    height: 64px;
+    height: 77px;
+  }
+  .popup {
+    top: 77px;
   }
   .mob_button {
     display: flex;
@@ -371,5 +374,7 @@ header {
     padding-top: 16px;
     padding-bottom: 16px;
     background-color: #fff;
+    border-top: #00e0ff 1px solid;
+    border-bottom: #00e0ff 1px solid;
   }
 }

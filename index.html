@@ -14,6 +14,7 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Slider-swiper END -->
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -42,9 +43,9 @@
           </a>
 
           <ul class="navbar_menu">
-            <li><a class="nav_elem" href="#about">About us</a></li>
             <li><a class="nav_elem" href="#howtostart">How to start</a></li>
             <li><a class="nav_elem" href="#benefits">Benefits</a></li>
+            <li><a class="nav_elem" href="#about">About</a></li>
             <li><a class="nav_elem" href="#reviews">Reviews</a></li>
           </ul>
           <div class="header_button_pair">
@@ -62,13 +63,13 @@
           <!-- <img src="img/main/mobbgmenu.png" alt="moblogo" class="mob_menu_bgimage" /> -->
           <div class="popup_textblock" id="popupSlide">
             <ul class="navbar_menu_mobile">
-              <li><a href="#about" class="nav_elem_mobile">About us</a></li>
               <li>
                 <a href="#howtostart" class="nav_elem_mobile">How to start</a>
               </li>
               <li>
                 <a href="#benefits" class="nav_elem_mobile">Benefits</a>
               </li>
+              <li><a href="#about" class="nav_elem_mobile">About</a></li>
               <li>
                 <a href="#reviews" class="nav_elem_mobile">Reviews</a>
               </li>
@@ -82,18 +83,18 @@
     </header>
     <section class="main">
       <div class="main_wrapper">
-        <div class="deco-wrapper"></div>
+        <div class="deco-wrapper" data-aos="fade-left" data-aos-duration="1000"></div>
         <div class="gradient5"></div>
-        <div class="main_text_content">
+        <div class="main_text_content" data-aos="fade-right" data-aos-duration="1000">
           <h1>Achieve Wellness with GLP-1:</h1>
           <p class="main_subtitle">Semaglutide, Tirzepatide <br />& Retatrutide</p>
           <p class="main_text">
             Boost your health journey with powerful benefits for weight management and overall
             wellness
           </p>
-          <a href="#" class="main_button main_item_button">Get Started</a>
+          <a href="#contacts" class="main_button main_item_button">Get Started</a>
         </div>
-        <div class="main_images_content">
+        <div class="main_images_content" data-aos="fade-down" data-aos-duration="1000">
           <div class="bottle_price_wrapper">
             <p class="bottle_text" id="numone">FROM</p>
             <p class="bottle_price" id="numone">$299/mo</p>
@@ -114,10 +115,11 @@
           Boost your health journey with powerful benefits for weight management and overall
           wellness
         </p>
-        <a href="" class="main_button button_on_mobile">Get Started</a>
+        <a href="#contacts" class="main_button button_on_mobile">Get Started</a>
       </div>
     </section>
-    <section class="benefits">
+    <section class="benefits" id="benefits">
+      <div class="gradient1"></div>
       <div class="benefits_wrapper">
         <div class="titles_wrapper">
           <p class="section_title">Benefits of GLP-1 Treatments</p>
@@ -134,7 +136,7 @@
         </div>
         <div class="benefits_columns_wrapper">
           <div class="benefits_item_wrapper">
-            <div class="benefits_item">
+            <div class="benefits_item" data-aos="fade-right">
               <p class="benefits_item_title">Positive Health Impact</p>
               <p class="benefits_item_text">
                 They also improve overall health by lowering blood pressure, cholesterol,
@@ -142,7 +144,7 @@
               </p>
               <img src="img/benefits/3.svg" alt="" class="benefits_item_image b_fst_img" />
             </div>
-            <div class="benefits_item_wrapper">
+            <div class="benefits_item_wrapper" data-aos="fade-right">
               <div class="benefits_item item_two">
                 <p class="benefits_item_title">Enhanced Blood Sugar Regulation</p>
                 <p class="benefits_item_text">
@@ -153,7 +155,7 @@
               </div>
             </div>
           </div>
-          <div class="benefits_item_wrapper">
+          <div class="benefits_item_wrapper" data-aos="fade-up">
             <div class="benefits_item item_three">
               <p class="benefits_item_title">
                 Improved<br />
@@ -166,7 +168,7 @@
               <img src="img/benefits/1.svg" alt="" class="benefits_item_image b_trd_img" />
             </div>
           </div>
-          <div class="benefits_item_wrapper item_four_wrapper">
+          <div class="benefits_item_wrapper item_four_wrapper" data-aos="fade-left">
             <img src="img/benefits/woman.png" alt="woman" class="benefits_woman" />
             <div class="benefits_item item_four">
               <p class="benefits_item_title">
@@ -241,7 +243,7 @@
         <div class="swiper-pagination2"></div>
       </div>
     </section>
-    <section class="comp">
+    <section class="comp" data-aos="fade-up">
       <div class="comp_wrapper">
         <div class="img_text_wrapper">
           <img src="img/comp/graphdesk.png" alt="graph" class="comp_img comp_desk-img" />
@@ -258,105 +260,431 @@
         </div>
       </div>
     </section>
-    <section class="products">
+    <section class="products" data-aos="fade-up">
       <div class="products_wrapper">
-        <div class="products_product">
-          <p class="product_title">Semaglutide</p>
-          <div class="product_benefits_wrapper">
-            <div class="product_benefit_item">
-              <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
-              <p class="product_benefit_text">Annual weight loss: 16.9%</p>
+        <div class="swiper mySwiper3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide pr_slide">
+              <div class="products_product">
+                <div class="gradient_7"></div>
+                <p class="product_title">Semaglutide</p>
+                <p class="product_vial mob_vial">5ml Vial (2mg/ml) - 4 month supply</p>
+                <div class="product_benefits_wrapper">
+                  <div class="product_benefit_item">
+                    <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
+                    <p class="product_benefit_text">Annual weight loss: 16.9%</p>
+                  </div>
+                  <div class="product_benefit_item">
+                    <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
+                    <p class="product_benefit_text">Appetite Suppression</p>
+                  </div>
+                  <div class="product_benefit_item">
+                    <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
+                    <p class="product_benefit_text">Improves Glycemic Control</p>
+                  </div>
+                  <div class="product_benefit_item">
+                    <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
+                    <p class="product_benefit_text">Cardiovascular Protection</p>
+                  </div>
+                  <div class="product_benefit_item">
+                    <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
+                    <p class="product_benefit_text">+ B12 and Glycine</p>
+                  </div>
+                </div>
+                <p class="product_vial desk_vial">5ml Vial (2mg/ml) - 4 month supply</p>
+                <div class="abs_img_text_wrap">
+                  <p class="abs_img_text_wrap_text">From $299/mo</p>
+                  <img
+                    src="img/products/sema.png"
+                    alt="semaglutide"
+                    class="abs_img_text_wrap_img"
+                  />
+                  <img src="img/products/mob.png" alt="mob" class="pr_mob_img" />
+                </div>
+              </div>
             </div>
-            <div class="product_benefit_item">
-              <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
-              <p class="product_benefit_text">Appetite Suppression</p>
+            <div class="swiper-slide pr_slide">
+              <div class="products_product">
+                <div class="gradient_7"></div>
+                <p class="product_title">Tirzepatide</p>
+                <p class="product_vial mob_vial">5ml Vial (2mg/ml) - 4 month supply</p>
+                <div class="product_benefits_wrapper">
+                  <div class="product_benefit_item">
+                    <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
+                    <p class="product_benefit_text">Annual weight loss: 22.4%</p>
+                  </div>
+                  <div class="product_benefit_item">
+                    <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
+                    <p class="product_benefit_text">Superior Weight Loss</p>
+                  </div>
+                  <div class="product_benefit_item">
+                    <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
+                    <p class="product_benefit_text">Enhanced Blood Sugar Control</p>
+                  </div>
+                  <div class="product_benefit_item">
+                    <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
+                    <p class="product_benefit_text">Heart Health Benefits</p>
+                  </div>
+                  <div class="product_benefit_item">
+                    <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
+                    <p class="product_benefit_text">+ B12 and Glycine</p>
+                  </div>
+                </div>
+                <p class="product_vial desk_vial">5ml Vial (10mg/ml) - 4 month supply</p>
+                <div class="abs_img_text_wrap">
+                  <p class="abs_img_text_wrap_text">From $399/mo</p>
+                  <img
+                    src="img/products/tirze.png"
+                    alt="semaglutide"
+                    class="abs_img_text_wrap_img"
+                  />
+                  <img src="img/products/mob.png" alt="mob" class="pr_mob_img" />
+                </div>
+              </div>
             </div>
-            <div class="product_benefit_item">
-              <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
-              <p class="product_benefit_text">Improves Glycemic Control</p>
+            <div class="swiper-slide pr_slide">
+              <div class="products_product">
+                <div class="gradient_7"></div>
+                <p class="product_title">Retatrutide</p>
+                <p class="product_vial mob_vial">5ml Vial (2mg/ml) - 4 month supply</p>
+                <div class="product_benefits_wrapper">
+                  <div class="product_benefit_item">
+                    <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
+                    <p class="product_benefit_text">Annual weight loss: 26.9%</p>
+                  </div>
+                  <div class="product_benefit_item">
+                    <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
+                    <p class="product_benefit_text">Ultimate Weight Loss</p>
+                  </div>
+                  <div class="product_benefit_item">
+                    <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
+                    <p class="product_benefit_text">Blood Sugar Control</p>
+                  </div>
+                  <div class="product_benefit_item">
+                    <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
+                    <p class="product_benefit_text">Heart Health Support</p>
+                  </div>
+                  <div class="product_benefit_item">
+                    <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
+                    <p class="product_benefit_text">+ B12 and Glycine</p>
+                  </div>
+                </div>
+                <p class="product_vial desk_vial">4ml Vial (8mg/ml) - 2 Vials for 4 Months</p>
+                <div class="abs_img_text_wrap">
+                  <p class="abs_img_text_wrap_text">From $599/mo</p>
+                  <img
+                    src="img/products/reta.png"
+                    alt="semaglutide"
+                    class="abs_img_text_wrap_img"
+                  />
+                  <img src="img/products/mob.png" alt="mob" class="pr_mob_img" />
+                </div>
+              </div>
             </div>
-            <div class="product_benefit_item">
-              <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
-              <p class="product_benefit_text">Cardiovascular Protection</p>
-            </div>
-            <div class="product_benefit_item">
-              <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
-              <p class="product_benefit_text">+ B12 and Glycine</p>
-            </div>
-          </div>
-          <p class="product_vial">5ml Vial (2mg/ml) - 4 month supply</p>
-          <div class="abs_img_text_wrap">
-            <p class="abs_img_text_wrap_text">From $299/mo</p>
-            <img src="img/products/sema.png" alt="semaglutide" class="abs_img_text_wrap_img" />
           </div>
         </div>
-        <div class="products_product">
-          <p class="product_title">Tirzepatide</p>
-          <div class="product_benefits_wrapper">
-            <div class="product_benefit_item">
-              <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
-              <p class="product_benefit_text">Annual weight loss:  22.4%</p>
+      </div>
+      <div class="swiper-pagination3"></div>
+    </section>
+    <section class="steps" id="howtostart">
+      <div class="steps_wrapper">
+        <p class="steps_title">Step-by-step process</p>
+        <div class="steps_content_wrapper">
+          <img src="img/steps/mainstep.png" alt="woman" class="steps_img" />
+          <div class="steps_steps">
+            <div class="steps_step-step" data-aos="fade-left" data-aos-duration="500">
+              <p class="steps_step_number">1</p>
+              <p class="steps_step_text">Complete Survey - Get Approved!</p>
             </div>
-            <div class="product_benefit_item">
-              <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
-              <p class="product_benefit_text">Superior Weight Loss</p>
+            <div
+              class="steps_step-step"
+              data-aos="fade-left"
+              data-aos-duration="500"
+              data-aos-delay="200"
+            >
+              <p class="steps_step_number">2</p>
+              <p class="steps_step_text">Select your desired medication.</p>
             </div>
-            <div class="product_benefit_item">
-              <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
-              <p class="product_benefit_text">Enhanced Blood Sugar Control</p>
+            <div
+              class="steps_step-step"
+              data-aos="fade-left"
+              data-aos-duration="500"
+              data-aos-delay="400"
+            >
+              <p class="steps_step_number">3</p>
+              <p class="steps_step_text desk_step_text">Become a Patient (complete intake form).</p>
+
+              <p class="steps_step_text mob_step_text">
+                Become a Patient<br />(complete intake form).
+              </p>
             </div>
-            <div class="product_benefit_item">
-              <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
-              <p class="product_benefit_text">Heart Health Benefits</p>
+            <div
+              class="steps_step-step"
+              data-aos="fade-left"
+              data-aos-duration="500"
+              data-aos-delay="600"
+            >
+              <p class="steps_step_number">4</p>
+              <p class="steps_step_text">Receive your medication to your door within 72 hours.</p>
             </div>
-            <div class="product_benefit_item">
-              <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
-              <p class="product_benefit_text">+ B12 and Glycine</p>
+            <div
+              class="steps_step-step"
+              data-aos="fade-left"
+              data-aos-duration="500"
+              data-aos-delay="800"
+            >
+              <p class="steps_step_number">5</p>
+              <p class="steps_step_text">Our board certified physicians monitor your progress.</p>
             </div>
-          </div>
-          <p class="product_vial">5ml Vial (10mg/ml) - 4 month supply</p>
-          <div class="abs_img_text_wrap">
-            <p class="abs_img_text_wrap_text">From $399/mo</p>
-            <img src="img/products/tirze.png" alt="semaglutide" class="abs_img_text_wrap_img" />
-          </div>
-        </div>
-        <div class="products_product">
-          <p class="product_title">Retatrutide</p>
-          <div class="product_benefits_wrapper">
-            <div class="product_benefit_item">
-              <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
-              <p class="product_benefit_text">Annual weight loss: 26.9%</p>
-            </div>
-            <div class="product_benefit_item">
-              <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
-              <p class="product_benefit_text">Ultimate Weight Loss</p>
-            </div>
-            <div class="product_benefit_item">
-              <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
-              <p class="product_benefit_text">Blood Sugar Control</p>
-            </div>
-            <div class="product_benefit_item">
-              <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
-              <p class="product_benefit_text">Heart Health Support</p>
-            </div>
-            <div class="product_benefit_item">
-              <img src="img/products/text-icon.svg" alt="icon" class="pr_icon" />
-              <p class="product_benefit_text">+ B12 and Glycine</p>
-            </div>
-          </div>
-          <p class="product_vial">4ml Vial (8mg/ml) - 2 Vials for 4 Months</p>
-          <div class="abs_img_text_wrap">
-            <p class="abs_img_text_wrap_text">From $599/mo</p>
-            <img src="img/products/reta.png" alt="semaglutide" class="abs_img_text_wrap_img" />
+            <a href="#contacts" class="main_button steps_button">Get Started</a>
           </div>
         </div>
       </div>
     </section>
-    <section class="steps"></section>
-    <section class="changes"></section>
-    <section class="faq"></section>
+    <section class="changes" id="about" data-aos="fade-up">
+      <div class="changes_wrapper">
+        <p class="changes_title">Making Lifestyle Changes with GLP-1</p>
+        <p class="changes_subtitle">
+          Integrating GLP-1 into your routine comes with the opportunity to adopt a healthier
+          lifestyle. To maximize the effectiveness of your treatment, consider these essential tips:
+        </p>
+        <div class="changes_content">
+          <div class="swiper mySwiper4">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide ch_slide">
+                <div class="changes_content_item">
+                  <img src="img/changes/1.svg" alt="icon" class="changes_content_image" />
+                  <p class="changes_content_title">Maintaining <br />a Healthy Diet</p>
+                  <p class="changes_content_text">
+                    Incorporate nutrient-dense foods like fruits, vegetables, whole grains, and lean
+                    proteins. Limit processed snacks with excess sugars and unhealthy fats.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide ch_slide">
+                <div class="changes_content_item">
+                  <img src="img/changes/2.svg" alt="icon" class="changes_content_image" />
+                  <p class="changes_content_title">
+                    Engaging in<br />
+                    Physical Activity
+                  </p>
+                  <p class="changes_content_text">
+                    Enjoy activities like hiking or dancing to stay consistent. Exercise boosts
+                    weight management, mental health, and well-being. Stay active, stay healthy!
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide ch_slide">
+                <div class="changes_content_item">
+                  <img src="img/changes/3.svg" alt="icon" class="changes_content_image" />
+                  <p class="changes_content_title">Ensuring Quality Sleep</p>
+                  <p class="changes_content_text">
+                    Quality sleep aids weight loss. Aim for 7-9 hours nightly to support health and
+                    recovery. Poor sleep links to weight gain, so prioritize rest.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide ch_slide">
+                <div class="changes_content_item">
+                  <img src="img/changes/4.svg" alt="icon" class="changes_content_image" />
+                  <p class="changes_content_title">Maintaining<br />a Positive Mindset</p>
+                  <p class="changes_content_text">
+                    Weight loss has challenges, but a positive mindset helps. Be kind to yourself
+                    and celebrate small successes along the way.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination4"></div>
+      </div>
+    </section>
+    <section class="found">
+      <div class="gradient2"></div>
+      <div class="gradient3"></div>
+      <div class="found_wrapper">
+        <p class="found_title">Founders of Aspire Meds</p>
+        <div class="found_content">
+          <div class="founder_item" data-aos="fade-right">
+            <img src="img/founders/DDR.png" alt="founder" class="founder_img" />
+            <p class="founder_name">Derik Reichenbach</p>
+            <p class="founder_position">Chief Executive Officer</p>
+            <p class="founder_text">
+              Has acted as Chief Executive Officer of multiple FDA Approved Medical Device
+              manufacturers and is an avid Health & Fitness enthusiast
+            </p>
+          </div>
+          <div class="founder_item f_right_item" data-aos="fade-left">
+            <img src="img/founders/CVS.png" alt="founder" class="founder_img right_image" />
+            <p class="founder_name">Dr. Chris Van Smith</p>
+            <p class="founder_position">Chief Medical Officer</p>
+            <p class="founder_text">
+              Has over 25 years of experience practicing medicine in Florida, specializing in
+              hormone replacement therapy, weight loss, and longevity.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="faq" id="faq">
+      <div class="faq_wrapper">
+        <p class="faq_title" data-aos="fade-down">FAQs</p>
+        <img src="img/faq/am.png" alt="woman" class="faq_img" data-aos="fade-left" />
+        <div class="faq-item" id="faq1">
+          <div class="question-wrapper" id="faq-click" onclick="toggleAnswer('faq1')">
+            <h3 class="question">
+              1. What are GLP-1 medications and <br />
+              how do they work?
+            </h3>
+            <div class="circle-wrapper">
+              <span class="plus-minus-icon">+</span>
+            </div>
+          </div>
+          <div class="answer-wrapper">
+            <div class="separator"></div>
+            <p class="answer">
+              Glucagon-like peptide-1 (GLP-1) medications are a class of drugs that help treat type
+              2 diabetes and obesity. Prescribed under the brand names Ozempic and Wegovy, they are
+              both highly effective and very safe for use as a weight loss drug. They work by
+              mimicking the body's production of GLP-1, which helps the pancreas produce insulin
+              after eating and keeps blood sugar levels in check. GLP-1 medications can also help
+              with weight loss and protect the heart and kidneys.
+            </p>
+          </div>
+        </div>
 
-    <section class="reviews">
+        <div class="faq-item" id="faq2">
+          <div class="question-wrapper" onclick="toggleAnswer('faq2')">
+            <h3 class="question">2. How do Semaglutide, Tirzepatide and<br />Retatrutide work?</h3>
+            <div class="circle-wrapper">
+              <span class="plus-minus-icon">+</span>
+            </div>
+          </div>
+          <div class="answer-wrapper">
+            <div class="separator"></div>
+            <p class="answer">
+              These medications work by mimicking a hormone that targets areas of the brain involved
+              in appetite regulation, thereby reducing hunger and helping you eat less food. They
+              also slow gastric emptying, which helps you feel fuller for longer.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq3">
+          <div class="question-wrapper" onclick="toggleAnswer('faq3')">
+            <h3 class="question">
+              3. Who is eligible for weight<br />
+              losstreatment treatment with GLP-1?
+            </h3>
+            <div class="circle-wrapper">
+              <span class="plus-minus-icon">+</span>
+            </div>
+          </div>
+          <div class="answer-wrapper">
+            <div class="separator"></div>
+            <p class="answer">
+              These treatments are suitable for adults who are overweight or obese and have
+              weight-related medical problems or for those who are unable to lose weight through
+              diet and exercise alone. A consultation with a healthcare provider can determine if
+              these medications are right for you.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq4">
+          <div class="question-wrapper" onclick="toggleAnswer('faq4')">
+            <h3 class="question">4. How long do I need to<br />use these medications?</h3>
+            <div class="circle-wrapper">
+              <span class="plus-minus-icon">+</span>
+            </div>
+          </div>
+          <div class="answer-wrapper">
+            <div class="separator"></div>
+            <p class="answer">
+              The duration of treatment will depend on your specific health goals, response to the
+              medication, and the guidance of your healthcare provider. Some patients might use
+              these treatments long-term under medical supervision.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item" id="faq5">
+          <div class="question-wrapper" onclick="toggleAnswer('faq5')">
+            <h3 class="question">
+              5. How can I schedule an appointment with<br />
+              Aspire Meds?
+            </h3>
+            <div class="circle-wrapper">
+              <span class="plus-minus-icon">+</span>
+            </div>
+          </div>
+          <div class="answer-wrapper">
+            <div class="separator"></div>
+            <p class="answer">
+              You can schedule an appointment with us through our website. You can fill out the form
+              or simply call our clinic directly to book an appointment or ask about specific
+              services
+            </p>
+          </div>
+        </div>
+        <div class="faq-item" id="faq6">
+          <div class="question-wrapper" onclick="toggleAnswer('faq6')">
+            <h3 class="question">
+              6. Does the Aspire Meds offer ongoing support<br />
+              during treatment?
+            </h3>
+            <div class="circle-wrapper">
+              <span class="plus-minus-icon">+</span>
+            </div>
+          </div>
+          <div class="answer-wrapper">
+            <div class="separator"></div>
+            <p class="answer">
+              Yes, our clinic provides ongoing support and monitoring throughout your treatment. We
+              offer nutritional counseling, lifestyle advice, and regular check-ups to help you
+              achieve and maintain your weight loss goals.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item" id="faq7">
+          <div class="question-wrapper" onclick="toggleAnswer('faq7')">
+            <h3 class="question">7. What are the side effects of GLP-1 medications?</h3>
+            <div class="circle-wrapper">
+              <span class="plus-minus-icon">+</span>
+            </div>
+          </div>
+          <div class="answer-wrapper">
+            <div class="separator"></div>
+            <p class="answer">
+              Some patients may experience temporary injection site redness or irritation, nausea,
+              vomiting, diarrhea, constipation, bloating, and stomach cramps. These are usually mild
+              and temporary but can make it difficult to continue taking the medication.  If you
+              experience any of these issues and are uncomfortable, please contact our physician
+              immediately.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item" id="faq8">
+          <div class="question-wrapper" onclick="toggleAnswer('faq8')">
+            <h3 class="question">8. Where do these medications come from?</h3>
+            <div class="circle-wrapper">
+              <span class="plus-minus-icon">+</span>
+            </div>
+          </div>
+          <div class="answer-wrapper">
+            <div class="separator"></div>
+            <p class="answer">
+              Aspire Meds has contracted with a national compounding pharmacy that sources all raw
+              materials and formulates all products in the USA.  All medications are third party
+              tested at a level above industry standards to ensure we are delivering the highest
+              quality, most pure products on the market.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews" data-aos="fade-up">
       <div class="reviews_wrapper">
         <h2 class="reviews_title">Reviews</h2>
         <div class="reviews_items-wrapper">
@@ -407,8 +735,52 @@
         </div>
       </div>
     </section>
-    <section class="cta"></section>
-    <footer></footer>
+    <section class="cta" data-aos="fade-up" id="contacts">
+      <div class="cta_wrapper">
+        <p class="cta_title">Get started</p>
+      </div>
+    </section>
+    <footer data-aos="fade-up">
+      <div class="footer_wrapper">
+        <div class="footer_info">
+          <img src="img/global/logo.png" alt="logo" class="footer-logo" />
+          <a href="#" class="footer_phone_wrapper desk_f">
+            <img src="img/footer/phone.svg" alt="phone" class="footer_phone_icon" />
+            <span class="footer_phone_number">+ 99 9999 9999 999</span>
+          </a>
+          <div class="footer_icons_wrapper">
+            <a href="#" class="footer-icon_link">
+              <img src="img/footer/fb.svg" alt="icon" class="footer-icon_icon" />
+            </a>
+            <a href="#" class="footer-icon_link">
+              <img src="img/footer/mail.svg" alt="icon" class="footer-icon_icon" />
+            </a>
+            <a href="#" class="footer-icon_link">
+              <img src="img/footer/inst.svg" alt="icon" class="footer-icon_icon" />
+            </a>
+          </div>
+        </div>
+        <div class="footer_navigation">
+          <p class="footer_navigation_title">Navigation</p>
+
+          <a href="#howtostart" class="footer_navigation_link">How to start</a>
+          <a href="#benefits" class="footer_navigation_link">Benefits</a>
+          <a href="#about" class="footer_navigation_link">About</a>
+          <a href="#reviews" class="footer_navigation_link">Reviews</a>
+        </div>
+        <div class="footer_hours">
+          <p class="footer_navigation_title">Work hours</p>
+          <p class="footer_h_day">Monday - Friday</p>
+          <p class="footer_h_hours">9:00 am - 5:00 pm</p>
+          <p class="footer_h_day">Saturday - Sunday</p>
+          <p class="footer_h_hours">By Appointment Only</p>
+          <a href="#" class="footer_phone_wrapper mob_f">
+            <img src="img/footer/phone.svg" alt="phone" class="footer_phone_icon" />
+            <span class="footer_phone_number">+ 99 9999 9999 999</span>
+          </a>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -486,6 +858,68 @@
           },
         },
       });
+    </script>
+    <script>
+      var swiper = new Swiper('.mySwiper3', {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        pagination: {
+          el: '.swiper-pagination3',
+          type: 'bullets',
+        },
+
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 1,
+          },
+
+          // when window width is >= 480px
+          1060: {
+            slidesPerView: 2,
+          },
+          // when window width is >= 640px
+          1510: {
+            slidesPerView: 2,
+          },
+          1880: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper('.mySwiper4', {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        pagination: {
+          el: '.swiper-pagination4',
+          type: 'bullets',
+        },
+
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 1,
+          },
+
+          // when window width is >= 480px
+          900: {
+            slidesPerView: 2,
+          },
+          // when window width is >= 640px
+          1310: {
+            slidesPerView: 3,
+          },
+          1600: {
+            slidesPerView: 4,
+          },
+        },
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>

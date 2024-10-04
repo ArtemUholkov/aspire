@@ -1,5 +1,6 @@
 .benefits {
   padding: 100px 0 0;
+  position: relative;
 }
 .benefits_wrapper {
   width: 100%;
@@ -120,6 +121,41 @@
   height: 290px;
   right: -50px;
 }
+
+.gradient1 {
+  position: absolute;
+  top: 200px;
+  right: 100px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(0, 224, 255, 0.5) 20%, rgba(0, 224, 255, 0.5) 70%);
+  filter: blur(200px) brightness(1.1); /* Increased blur and brightness */
+  transform: translate(-95%, -50%);
+  z-index: -1;
+  animation: glow71 3s infinite alternate;
+}
+@keyframes glow71 {
+  0% {
+    opacity: 0.8; /* Increased opacity */
+    transform: translate(-60%, -50%) scale(1);
+  }
+  25% {
+    opacity: 1; /* Peak brightness */
+    transform: translate(calc(-60% + 100px), calc(-50% + 50px)) scale(1.05);
+  }
+  50% {
+    opacity: 1; /* Peak brightness */
+    transform: translate(calc(-60% - 100px), calc(-50% + 100px)) scale(1.1);
+  }
+  75% {
+    opacity: 0.9; /* Slight fade */
+    transform: translate(calc(-60% - 50px), calc(-50% - 100px)) scale(1.05);
+  }
+  100% {
+    opacity: 0.8; /* Return to initial glow */
+    transform: translate(calc(-60% + 100px), calc(-50% - 50px)) scale(1.1);
+  }
+}
 @media (min-width: 600px) {
   .benefits_item:hover .benefits_item_title {
     top: -350px;
@@ -213,6 +249,9 @@
 }
 @media (max-width: 1580px) {
   .benefits_woman {
+    display: none;
+  }
+  .gradient1 {
     display: none;
   }
 }

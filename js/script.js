@@ -50,3 +50,48 @@ function burgerHandler(e) {
   }
   burger.classList.toggle('active');
 }
+let activeFaqId = null;
+
+function toggleAnswer(faqId) {
+  const currentFaq = document.getElementById(faqId);
+  const currentAnswerWrapper = currentFaq.querySelector('.answer-wrapper');
+  const currentQuestionWrapper = currentFaq.querySelector('.question-wrapper');
+  const currentSeparator = currentFaq.querySelector('.separator');
+  const currentIcon = currentFaq.querySelector('.plus-minus-icon'); // Select the plus/minus icon
+
+  if (activeFaqId && activeFaqId !== faqId) {
+    // Collapse previously active FAQ
+    const previousFaq = document.getElementById(activeFaqId);
+    const previousAnswerWrapper = previousFaq.querySelector('.answer-wrapper');
+    const previousQuestionWrapper = previousFaq.querySelector('.question-wrapper');
+    const previousSeparator = previousFaq.querySelector('.separator');
+    const previousIcon = previousFaq.querySelector('.plus-minus-icon'); // Select the plus/minus icon of previous FAQ
+
+    previousAnswerWrapper.style.maxHeight = null;
+    previousAnswerWrapper.style.opacity = 0;
+    previousSeparator.style.opacity = 0;
+    previousQuestionWrapper.classList.remove('active');
+    previousIcon.textContent = '+'; // Change to plus when closed
+  }
+
+  if (activeFaqId === faqId) {
+    // Collapse current if it's the same one clicked
+    currentAnswerWrapper.style.maxHeight = null;
+    currentAnswerWrapper.style.opacity = 0;
+    currentSeparator.style.opacity = 0;
+    currentQuestionWrapper.classList.remove('active');
+    currentIcon.textContent = '+'; // Change to plus when collapsed
+    activeFaqId = null; // Reset activeFaqId
+  } else {
+    // Expand current FAQ
+    currentAnswerWrapper.style.maxHeight = currentAnswerWrapper.scrollHeight + 'px';
+    currentAnswerWrapper.style.opacity = 1;
+    currentSeparator.style.opacity = 1;
+    currentQuestionWrapper.classList.add('active');
+    currentIcon.innerHTML = '&ndash;'; // Change to minus when expanded
+    activeFaqId = faqId; // Set the new active FAQ
+  }
+}
+
+// Optionally, trigger the first FAQ to open on page load
+document.querySelector('#faq-click').click();
