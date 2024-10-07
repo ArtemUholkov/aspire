@@ -1,0 +1,24 @@
+.thankyou {
+  width: 100svw;
+  height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.thankyou_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  font-size: 54px;
+}
+
+.thankyou_button {
+  text-decoration: none;
+}
+.thankyou_button:hover {
+  text-decoration: none;
+}
