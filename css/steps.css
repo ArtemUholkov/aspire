@@ -135,12 +135,12 @@
     display: block;
     margin: 0 auto;
     margin-top: 8px;
-    width: 206px;
+
     padding-top: 15px;
     padding-bottom: 15px;
     color: var(--Charcoal-gray, #111);
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
     text-align: center;
   }

@@ -305,13 +305,14 @@ h1 {
   .main-text_mob {
     display: block;
     color: var(--Charcoal-gray, #111);
-    text-align: center;
+    text-align: left;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
     line-height: 140%;
     margin-top: 24px;
+    max-width: 312px;
   }
   .gradient5 {
     display: none;
