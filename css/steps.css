@@ -46,6 +46,7 @@
   font-weight: 700;
   line-height: 100%; /* 60px */
   text-transform: uppercase;
+  width: 42px;
 }
 .steps_step_text {
   color: var(--Charcoal-gray, #111);
@@ -131,6 +132,9 @@
   }
 }
 @media (max-width: 600px) {
+  .steps_step-step {
+    gap: 15px;
+  }
   .steps_button {
     display: block;
     margin: 0 auto;
