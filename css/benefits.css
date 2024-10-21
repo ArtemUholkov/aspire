@@ -34,7 +34,6 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
-  flex-wrap: wrap;
 }
 .benefits_item_wrapper {
   display: flex;
@@ -189,6 +188,9 @@
   position: relative;
   top: 40px;
 }
+.three_woman {
+  display: none;
+}
 .b_trd_img {
   width: 300px;
   height: 282px;
@@ -249,11 +251,25 @@
     padding-left: 50px;
   }
 }
-@media (max-width: 1580px) {
-  .benefits_woman {
+@media (max-width: 1560px) {
+  .four_woman {
     display: none;
   }
   .gradient1 {
+    display: none;
+  }
+  .three_woman {
+    display: block;
+    left: initial;
+    right: 0;
+    top: -532px;
+  }
+  .benefits_columns_wrapper {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 1270px) {
+  .three_woman {
     display: none;
   }
 }

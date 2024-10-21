@@ -189,7 +189,7 @@ h1 {
 @media (max-width: 1600px) {
   .main_wrapper {
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 30px;
   }
   .deco-wrapper {
     width: 800px;
